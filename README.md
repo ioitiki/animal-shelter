@@ -1,6 +1,6 @@
-# _animalShelter_
+# _Animal Shelter_
 
-#### _animalShelter, 03-28-2017_
+#### _Animal Shelter, 03-28-2017_
 
 #### By _**Clifford Grimmell and Andrew Malkin**_
 

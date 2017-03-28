@@ -12,9 +12,15 @@ public class CustomerTest {
   @After
   public void tearDown() {
     try (Connection con = DB.sql2o.open()) {
-      String sql = "DELETE FROM name_of_your_table *;";
+      String sql = "DELETE FROM customers *;";
       con.createQuery(sql).executeUpdate();
     }
+  }
+
+  @Test
+  public void customer_instanceOfCustomer_true() {
+    Customer newCustomer = new Customer("Test", "34334 Address", "503-420-6969", "Dog", "Mastiff");
+    assertEquals(true, newCustomer instanceof Customer);
   }
 
 }
